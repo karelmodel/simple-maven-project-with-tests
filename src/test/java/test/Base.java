@@ -31,10 +31,10 @@ class Base {
 
     protected void run() {
         double r = Math.random();
-        if (r < 0.1) {
-            fail("oops");
-        } else if (r < 0.2) {
-            throw new AssumptionViolatedException("skipping");
+        if (r <= 0.5) {
+            fail("wrong number!");
+        } else if (r > 0.5) {
+            success();
         }
     }
 
