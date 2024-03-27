@@ -30,9 +30,6 @@ import org.junit.internal.AssumptionViolatedException;
 class Base {
 
     protected void run() {
-        double r = Math.random();
-        if (r <= 0.5) {
-            fail("wrong number!");
-        }
+        fail("wrong number!");
     }
 }
