@@ -34,7 +34,7 @@ class Base {
         if (r <= 0.5) {
             fail("wrong number!");
         } else if (r > 0.5) {
-            success();
+            pass();
         }
     }
 
